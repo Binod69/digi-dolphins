@@ -4,6 +4,10 @@
     background-color: #f0f3fc;
     min-height: 55vh;
   }
+  .colArticle {
+    display: flex;
+    align-items: center;
+  }
   .bannerTitle {
     font-size: var(--mobile-font-title);
     max-width: 80%;
@@ -51,13 +55,17 @@
 
 @media screen and (min-width: 1200px) {
   .bannerContainer {
-    background-image: url('/img/digi-hero.jpeg');
+    /* background-image: url('/img/digi-hero.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    min-height: 80vh;
-    display: flex;
+    min-height: 80vh; */
+    /* display: flex;
     flex-direction: row;
+    align-items: center; */
+  }
+  .colArticle {
+    display: flex;
     align-items: center;
   }
   .bannerTitle {
