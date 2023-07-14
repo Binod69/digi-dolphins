@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Space_Grotesk } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import Navbars from './Components/NavBar/Navbar';
 
-const inter = Space_Grotesk({ subsets: ['latin'] });
+const dm_sans = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata: Metadata = {
   title: 'Digi Dolphins',
@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={dm_sans.className}>
         <Navbars />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

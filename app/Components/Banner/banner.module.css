@@ -1,0 +1,60 @@
+.bannerContainer {
+  background-image: url('/img/digi-hero.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bannerTitle {
+  font-size: 72px;
+  max-width: 53%;
+  line-height: 1.2;
+}
+
+.bannerTitleGradient {
+  font-size: 72px;
+  background: linear-gradient(272.54deg, #ffabe6 12.86%, #857fff 68.06%);
+  background-clip: text;
+  --webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 1rem;
+}
+.para {
+  max-width: 50%;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: lighter;
+  color: #ffabe6;
+}
+.disBtn {
+  background-color: #4c6fff;
+  border: 1px solid #4c6fff;
+  padding: 1.2rem 2rem;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.disBtn:hover {
+  background-color: #321370;
+  border: 1 px solid #321370;
+}
+
+.howBtn {
+  fill: #4c6fff;
+  color: #4c6fff;
+  border: 1px solid #4c6fff;
+  background-color: #02010100;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1.2rem 2rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.howBtn:hover {
+  border: 1px solid #321370;
+}

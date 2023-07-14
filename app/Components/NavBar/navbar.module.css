@@ -1,0 +1,21 @@
+/* color:7A88A7 */
+.color {
+  color: #7a88a7;
+  font-weight: 500;
+}
+
+.navBtn {
+  background-color: #4c6fff;
+  border: 1px solid #4c6fff;
+  width: auto;
+  padding: 13px 24px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.2;
+  fill: #fff;
+  border-radius: 3px;
+}
+.navBtn:hover {
+  background-color: #321370;
+  border: 1px solid #321370;
+}

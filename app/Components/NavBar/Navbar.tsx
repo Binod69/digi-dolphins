@@ -7,12 +7,13 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Link from 'next/link';
 import logo from '../../../public/img/logo.webp';
 import Image from 'next/image';
-import { Button } from 'react-bootstrap';
+
+import styles from './navbar.module.css';
 const Navbars = () => {
   return (
     <>
-      <Navbar expand="sm" className=" mb-3 p-4 shadow-sm" sticky="top">
-        <Container>
+      <Navbar expand="sm" className="  shadow-sm">
+        <Container className="p-2">
           <Navbar.Brand>
             <Link className="nav-link" href={'/'}>
               <Image src={logo} alt="logo.webp" width={150} height={50} />
@@ -31,18 +32,21 @@ const Navbars = () => {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Link className="nav-link me-lg-4" href="/">
+              <Nav className={'justify-content-end flex-grow-1 pe-3'}>
+                <Link className={`${styles.color} nav-link me-lg-4`} href="/">
                   Home
                 </Link>
-                <Link className="nav-link me-lg-4" href="/">
+                <Link
+                  className={`${styles.color} nav-link me-lg-4`}
+                  href="/about"
+                >
                   About Us
                 </Link>
 
                 <NavDropdown
                   title="Features"
                   id="offcanvasNavbarDropdown-expand-sm"
-                  className="me-lg-4"
+                  className={`${styles.color}  me-lg-4`}
                 >
                   <NavDropdown.Item href="#action/3.1">
                     Birthday Gifts
@@ -68,13 +72,13 @@ const Navbars = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Link
-                  className="nav-link me-lg-4"
+                  className={`${styles.color} nav-link me-lg-4`}
                   href="https://my-personal-blogs.vercel.app/"
                   target="_blank"
                 >
                   Blog
                 </Link>
-                <Button className="p-2">Get Started</Button>
+                <button className={`${styles.navBtn}`}>Get Started</button>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
