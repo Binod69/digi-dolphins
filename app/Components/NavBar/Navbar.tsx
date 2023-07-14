@@ -16,7 +16,8 @@ const Navbars = () => {
         <Container className="p-2">
           <Navbar.Brand>
             <Link className="nav-link" href={'/'}>
-              <Image src={logo} alt="logo.webp" width={150} height={50} />
+              {/* <Image src={logo} alt="logo.webp" width={150} height={50} /> */}
+              Digi Dolphin
             </Link>
           </Navbar.Brand>
 

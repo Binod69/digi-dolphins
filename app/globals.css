@@ -1,0 +1,4 @@
+:root {
+  --mobile-font-title: clamp(0.75rem, 0.75rem + 5.7292vw, 2.8125rem);
+  --mobile-font-para: clamp(0.75rem, 0.75rem + 1.0417vw, 1.125rem);
+}
