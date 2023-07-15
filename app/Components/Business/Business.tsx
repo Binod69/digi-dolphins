@@ -64,11 +64,12 @@ const Business = () => {
               </div>
             </div>
           </Col>
-          <animated.div ref={ref} style={animation}>
-            <Col
-              md={6}
-              className=" d-flex flex-lg-row justify-content-center align-items-center"
-            >
+
+          <Col
+            md={6}
+            className=" d-flex flex-lg-row justify-content-center align-items-center"
+          >
+            <animated.div ref={ref} style={animation}>
               <article className="">
                 <h2 className={styles.title}>
                   We’re building business for your digital economy
@@ -105,8 +106,8 @@ const Business = () => {
                 <span className={styles.counterPara}>Business started</span>
                 <span className={`${styles.counterPara} ms-5`}>startup</span>
               </article>
-            </Col>
-          </animated.div>
+            </animated.div>
+          </Col>
         </Row>
       </Container>
     </>
