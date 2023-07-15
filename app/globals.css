@@ -2,4 +2,15 @@
   --mobile-font-title: clamp(0.75rem, 0.75rem + 5.7292vw, 2.8125rem);
   --mobile-font-para: clamp(0.75rem, 0.75rem + 1.0417vw, 1.125rem);
   --large-font: clamp(1rem, -9.5rem + 29.1667vw, 4.5rem);
+
+  --small-mobile-background-color: #f0f3fc;
+  --mobile-background-color: #e9e9f9;
+  --primary-color: #4c6fff;
+  --secondary-color: #321370;
+  --linear-gradient1: #ffabe6;
+  --linear-gradient2: #857fff;
+  --paragraph-color: #7b88a8;
+  --white-color: #fff;
+
+  --min-height-mobile: 55vh;
 }
