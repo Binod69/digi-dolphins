@@ -19,44 +19,47 @@ const Info = () => {
     transform: inView ? 'translateY(0)' : 'translateY(100px)',
   });
   return (
-    <Container className={styles.infoContainer}>
-      <div className={styles.titleCont}>
-        <Image
-          src={business}
-          alt="svg image"
-          placeholder="blur"
-          quality={100}
-          sizes="100vw"
-          className={`d-none d-lg-block object-fit-cover ${styles.titleImg}`}
-        />
-        <h2 className={styles.infoTitle}>
-          Make your business future-proof to anticipate the challenges to be
-        </h2>
-      </div>
-      <animated.div ref={ref} style={animation}>
-        <Row>
-          {mockData.map((item) => (
-            <Col className={styles.colCon} key={item.id} md={4}>
-              <div className={styles.icon}>
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  width={120}
-                  height={120}
-                />
-              </div>
-              <article>
-                <h4 className={styles.descTitle}>{item.title}</h4>
-                <p className={styles.descPara}>{item.description}</p>
-              </article>
-              <Link href="/" passHref className={styles.learnMoreLink}>
-                {item.link} <AiOutlineArrowRight />
-              </Link>
-            </Col>
-          ))}
-        </Row>
-      </animated.div>
-    </Container>
+    <>
+      <Container className={styles.infoContainer}>
+        <div className={styles.titleCont}>
+          <Image
+            src={business}
+            alt="svg image"
+            placeholder="blur"
+            quality={100}
+            sizes="100vw"
+            className={`d-none d-lg-block object-fit-cover ${styles.titleImg}`}
+          />
+          <h2 className={styles.infoTitle}>
+            Make your business future-proof to anticipate the challenges to be
+          </h2>
+        </div>
+        <animated.div ref={ref} style={animation}>
+          <Row>
+            {mockData.map((item) => (
+              <Col className={styles.colCon} key={item.id} md={4}>
+                <div className={styles.icon}>
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={120}
+                    height={120}
+                  />
+                </div>
+                <article>
+                  <h4 className={styles.descTitle}>{item.title}</h4>
+                  <p className={styles.descPara}>{item.description}</p>
+                </article>
+                <Link href="/" passHref className={styles.learnMoreLink}>
+                  {item.link} <AiOutlineArrowRight />
+                </Link>
+              </Col>
+            ))}
+          </Row>
+        </animated.div>
+        <hr className="my-lg-5" />
+      </Container>
+    </>
   );
 };
 

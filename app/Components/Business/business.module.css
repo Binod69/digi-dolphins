@@ -1,0 +1,45 @@
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img2 {
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  left: -5%;
+  top: 36%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 567px) {
+  .title {
+    color: var(--secondary-color);
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    margin: 2rem 0;
+    max-width: 100%;
+  }
+  .para {
+    font-size: 18px;
+    color: var(--linear-gradient1);
+    margin: 0 0 25px;
+    line-height: 28px;
+  }
+  .counter1 {
+    color: #6ac75a;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+  }
+  .counterPara {
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 28px;
+    text-transform: none;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+  }
+}
