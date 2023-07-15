@@ -6,36 +6,46 @@ import Col from 'react-bootstrap/Col';
 import styles from './info.module.css';
 import Link from 'next/link';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import { Card } from 'react-bootstrap';
 import mockData from '../../mockData';
+import Image from 'next/image';
+import business from '../../../public/img/business-bg-1.webp';
 
 const Info = () => {
   return (
-    <Container>
-      <Row>
+    <Container className={styles.infoContainer}>
+      <div className={styles.titleCont}>
+        <Image
+          src={business}
+          alt="banner image"
+          placeholder="blur"
+          quality={100}
+          sizes="100vw"
+          className={`d-none d-lg-block object-fit-cover ${styles.titleImg}`}
+        />
         <h2 className={styles.infoTitle}>
           Make your business future-proof to anticipate the challenges to be
         </h2>
-        <Col md={4}>
-          {mockData.map((item) => (
-            <Card key={item.id} className="mt-4 shadow-sm">
-              <Card.Body>
-                <div className={styles.icon}>{item.icon}</div>
-                <article>
-                  <Card.Title className={styles.descTitle}>
-                    {item.title}
-                  </Card.Title>
-                  <p className={styles.descPara}>{item.description}</p>
-                </article>
-                <Link href="/" passHref className={styles.learnMoreLink}>
-                  {item.link} <AiOutlineArrowRight />
-                </Link>
-              </Card.Body>
-            </Card>
-          ))}
-        </Col>
-        <Col md={4}></Col>
-        <Col md={4}></Col>
+      </div>
+      <Row>
+        {mockData.map((item) => (
+          <Col className={styles.colCon} key={item.id} md={4}>
+            <div className={styles.icon}>
+              <Image
+                src={item.icon}
+                alt={item.title}
+                width={120}
+                height={120}
+              />
+            </div>
+            <article>
+              <h4 className={styles.descTitle}>{item.title}</h4>
+              <p className={styles.descPara}>{item.description}</p>
+            </article>
+            <Link href="/" passHref className={styles.learnMoreLink}>
+              {item.link} <AiOutlineArrowRight />
+            </Link>
+          </Col>
+        ))}
       </Row>
     </Container>
   );
