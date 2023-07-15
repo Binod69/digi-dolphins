@@ -38,7 +38,7 @@ const Banner = () => {
                     digital economy.
                   </p>
                 </article>
-                <div className="">
+                <div className={styles.btnContainer}>
                   <button className={`${styles.disBtn} mt-4`}>
                     Discover Now
                   </button>

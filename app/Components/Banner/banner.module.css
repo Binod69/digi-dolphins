@@ -1,4 +1,4 @@
-/* F3F3FC */
+/* extra small screen */
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .bannerContainer {
     background-color: #f0f3fc;
@@ -53,30 +53,223 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+/* small screen */
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .bannerContainer {
-    /* background-image: url('/img/digi-hero.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    min-height: 80vh; */
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
+    background-color: #e9e9f9;
+    min-height: 55vh;
   }
+  .colArticle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bannerTitle {
+    font-size: clamp(1rem, -9.5rem + 29.1667vw, 4.5rem);
+    max-width: 95%;
+    line-height: 1.2;
+    color: #321370;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .bannerTitleGradient {
+    font-size: clamp(1rem, -9.5rem + 29.1667vw, 4.5rem);
+    background: linear-gradient(272.54deg, #ffabe6 12.86%, #857fff 68.06%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 1rem;
+  }
+
+  .para {
+    max-width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: lighter;
+    color: #ffabe6;
+    text-align: center;
+  }
+  .btnContainer {
+    text-align: center;
+  }
+
+  .disBtn {
+    background-color: #4c6fff;
+    border: 1px solid #4c6fff;
+    padding: 1.2rem 2rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  .disBtn:hover {
+    background-color: #321370;
+    border: 1 px solid #321370;
+  }
+
+  .howBtn {
+    fill: #4c6fff;
+    color: #4c6fff;
+    border: 1px solid #4c6fff;
+    background-color: #02010100;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1.2rem 2rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  .howBtn:hover {
+    border: 1px solid #321370;
+  }
+}
+
+/* medium screen */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .bannerContainer {
+    background-color: #e9e9f9;
+    min-height: 55vh;
+  }
+  .colArticle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bannerTitle {
+    font-size: clamp(1rem, -9.5rem + 29.1667vw, 4.5rem);
+    max-width: 95%;
+    line-height: 1.2;
+    color: #321370;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .bannerTitleGradient {
+    font-size: clamp(1rem, -9.5rem + 29.1667vw, 4.5rem);
+    background: linear-gradient(272.54deg, #ffabe6 12.86%, #857fff 68.06%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 1rem;
+  }
+
+  .para {
+    max-width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: lighter;
+    color: #ffabe6;
+    text-align: center;
+  }
+  .btnContainer {
+    text-align: center;
+  }
+
+  .disBtn {
+    background-color: #4c6fff;
+    border: 1px solid #4c6fff;
+    padding: 1.2rem 2rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  .disBtn:hover {
+    background-color: #321370;
+    border: 1 px solid #321370;
+  }
+
+  .howBtn {
+    fill: #4c6fff;
+    color: #4c6fff;
+    border: 1px solid #4c6fff;
+    background-color: #02010100;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1.2rem 2rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  .howBtn:hover {
+    border: 1px solid #321370;
+  }
+}
+
+/* large screen*/
+@media screen and (min-width: 992px) and (max-width: 1280px) {
   .colArticle {
     display: flex;
     align-items: center;
   }
   .bannerTitle {
-    font-size: 72px;
-    max-width: 53%;
+    font-size: var(--large-font);
+    max-width: 70%;
     line-height: 1.2;
     color: #321370;
+    margin-top: 5rem;
   }
 
   .bannerTitleGradient {
-    font-size: 72px;
+    font-size: var(--large-font);
+    background: linear-gradient(272.54deg, #ffabe6 12.86%, #857fff 68.06%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 1rem;
+  }
+  .para {
+    max-width: 50%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: lighter;
+    color: #ffabe6;
+  }
+  .disBtn {
+    background-color: #4c6fff;
+    border: 1px solid #4c6fff;
+    padding: 1.2rem 2rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  .disBtn:hover {
+    background-color: #321370;
+    border: 1 px solid #321370;
+  }
+
+  .howBtn {
+    fill: #4c6fff;
+    color: #4c6fff;
+    border: 1px solid #4c6fff;
+    background-color: #02010100;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1.2rem 2rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  .howBtn:hover {
+    border: 1px solid #321370;
+  }
+}
+
+/* extra large */
+@media screen and (min-width: 1400px) {
+  .colArticle {
+    display: flex;
+    align-items: center;
+  }
+  .bannerTitle {
+    font-size: var(--large-font);
+    max-width: 58%;
+    line-height: 1.2;
+    color: #321370;
+    margin-top: 5rem;
+  }
+
+  .bannerTitleGradient {
+    font-size: var(--large-font);
     background: linear-gradient(272.54deg, #ffabe6 12.86%, #857fff 68.06%);
     background-clip: text;
     --webkit-background-clip: text;
