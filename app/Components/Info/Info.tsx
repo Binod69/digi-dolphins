@@ -19,21 +19,21 @@ const Info = () => {
     transform: inView ? 'translateY(0)' : 'translateY(100px)',
   });
   return (
-    <animated.div ref={ref} style={animation}>
-      <Container className={styles.infoContainer}>
-        <div className={styles.titleCont}>
-          <Image
-            src={business}
-            alt="banner image"
-            placeholder="blur"
-            quality={100}
-            sizes="100vw"
-            className={`d-none d-lg-block object-fit-cover ${styles.titleImg}`}
-          />
-          <h2 className={styles.infoTitle}>
-            Make your business future-proof to anticipate the challenges to be
-          </h2>
-        </div>
+    <Container className={styles.infoContainer}>
+      <div className={styles.titleCont}>
+        <Image
+          src={business}
+          alt="svg image"
+          placeholder="blur"
+          quality={100}
+          sizes="100vw"
+          className={`d-none d-lg-block object-fit-cover ${styles.titleImg}`}
+        />
+        <h2 className={styles.infoTitle}>
+          Make your business future-proof to anticipate the challenges to be
+        </h2>
+      </div>
+      <animated.div ref={ref} style={animation}>
         <Row>
           {mockData.map((item) => (
             <Col className={styles.colCon} key={item.id} md={4}>
@@ -55,8 +55,8 @@ const Info = () => {
             </Col>
           ))}
         </Row>
-      </Container>
-    </animated.div>
+      </animated.div>
+    </Container>
   );
 };
 

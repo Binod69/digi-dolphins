@@ -1,4 +1,4 @@
-import svg from '../public/rocket-svgrepo-com.svg';
+import svg from '../public/img/rocket-ship-launch-missile-svgrepo-com.svg';
 import stock from '../public/img/trophy-svgrepo-com.svg';
 import trophy from '../public/img/line-chart-finance-business-svgrepo-com.svg';
 
