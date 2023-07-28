@@ -12,7 +12,7 @@ import styles from './navbar.module.css';
 const Navbars = () => {
   return (
     <>
-      <Navbar expand="sm" className="  shadow-sm">
+      <Navbar expand="sm" className="shadow-sm">
         <Container className="p-2">
           <Navbar.Brand>
             <Link className="nav-link" href={'/'}>
