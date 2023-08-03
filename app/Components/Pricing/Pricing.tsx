@@ -6,7 +6,9 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import { MdDone } from 'react-icons/md';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import styles from './pricing.module.css';
+import Link from 'next/link';
 
 const Pricing: React.FC = () => {
   const [showDiscountedPrice, setShowDiscountedPrice] =
@@ -51,7 +53,7 @@ const Pricing: React.FC = () => {
               <Card.Body>
                 <Card.Title className={styles.cardTitle}>Personal</Card.Title>
                 <Card.Text className={styles.cardText}>
-                  {showDiscountedPrice ? ' $14.99' : ' $19.00'}
+                  {showDiscountedPrice ? ' $19.00' : ' $14.99'}
                 </Card.Text>
                 <ul className={styles.cardList}>
                   <li>
@@ -96,7 +98,7 @@ const Pricing: React.FC = () => {
               <Card.Body>
                 <Card.Title className={styles.cardTitle}>Start up</Card.Title>
                 <Card.Text className={styles.cardText}>
-                  {showDiscountedPrice ? ' $24.99' : '$29.00'}
+                  {showDiscountedPrice ? ' $29.00' : '$24.99'}
                 </Card.Text>
                 <ul className={styles.cardList}>
                   <li>
@@ -141,7 +143,7 @@ const Pricing: React.FC = () => {
               <Card.Body>
                 <Card.Title className={styles.cardTitle}>Business</Card.Title>
                 <Card.Text className={styles.cardText}>
-                  {showDiscountedPrice ? '$49.99' : '$59.00'}
+                  {showDiscountedPrice ? '$59.00' : '$49.99'}
                 </Card.Text>
                 <ul className={styles.cardList}>
                   <li>
@@ -182,6 +184,14 @@ const Pricing: React.FC = () => {
             </Card>
           </Col>
         </Row>
+        <div className="text-center my-5">
+          <p className={styles.para}>
+            Design a custom package for your business.
+            <Link href="/" className={styles.salesLink}>
+              Contact Sales <AiOutlineArrowRight />
+            </Link>
+          </p>
+        </div>
       </Container>
     </>
   );

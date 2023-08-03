@@ -104,7 +104,10 @@
 .cardFooter:hover {
   background-color: var(--secondary-color);
 }
-
+.salesLink {
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .con {
     margin: 25% 0;
