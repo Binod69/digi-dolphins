@@ -4,14 +4,18 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
+  /* --background-overlay: '';
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #e9e9f9 0.76%, #e1e2ff00 100%); */
+}
+.con::before {
   --background-overlay: '';
   background-color: transparent;
   background-image: linear-gradient(0deg, #e9e9f9 0.76%, #e1e2ff00 100%);
 }
-.con::before {
-  background: var(--overlay-transition, 0.3s),
-    border-radius var(--border-transition, 0.3s),
-    opacity var(--overlay-transition, 0.3s);
+.articleCon {
+  text-align: center;
+  margin-top: 5%;
 }
 .para {
   color: var(--primary-color);
@@ -20,6 +24,7 @@
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: -0.3px;
+  margin-bottom: 0.5rem;
 }
 
 .title {
@@ -57,4 +62,44 @@
 .activePanel {
   background-color: red;
   color: red !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .con {
+    margin-top: 5rem;
+  }
+  .articleCon {
+    text-align: center;
+    margin-top: 20%;
+  }
+  .title {
+    font-size: 2.25rem;
+    max-width: 100%;
+  }
+  .para {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .con {
+    width: 100%;
+  }
+  .articleCon {
+    margin-top: 10%;
+  }
+  .title {
+    font-size: 2.625rem;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .articleCon {
+    margin-top: 10%;
+  }
+  .title {
+    font-size: 2.625rem;
+    max-width: 100%;
+  }
 }

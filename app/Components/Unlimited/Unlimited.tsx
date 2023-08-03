@@ -17,9 +17,7 @@ const Unlimited = () => {
     setActiveTab(index);
   };
   const imageAnimation = useSpring({
-    from: { transform: `translateX(${activeTab * 100}%)` },
-    enter: { transform: `translateX(${activeTab * 0}%)` },
-    leave: { transform: `translateX(${activeTab - 100}%)` },
+    transform: `translateX(${activeTab * 100}%)`,
     config: { tension: 100, friction: 26 }, // Adjust these values for desired animation feel
   });
   return (
@@ -28,7 +26,7 @@ const Unlimited = () => {
         <Container>
           <Row className="my-5">
             <Col>
-              <article className="text-center">
+              <article className={styles.articleCon}>
                 <p className={styles.para}>
                   HELPING ENTREPRENEURS MAKE MORE MONEY
                 </p>
@@ -38,83 +36,9 @@ const Unlimited = () => {
               </article>
             </Col>
           </Row>
-          {/* <Row>
-            <Col>
-              <Tabs>
-                <Row>
-                  <Col sm={12} md={3} className="me-5">
-                    <TabList className={styles.tablist}>
-                      <Tab
-                        className={activeTab === 0 ? styles.activePanel : ''}
-                        onClick={() => handleTabClick(0)}
-                      >
-                        <AiOutlineStock />
-                        Strategy & Business
-                        <p>
-                          We design business models and growth strategies to be
-                          effective and competitive.
-                        </p>
-                      </Tab>
-                      <Tab
-                        className={activeTab === 1 ? styles.activePanel : ''}
-                        onClick={() => handleTabClick(1)}
-                      >
-                        <GoPackage />
-                        Product Development
-                        <p>
-                          We design business models and growth strategies to be
-                          effective and competitive.
-                        </p>
-                      </Tab>
-                      <Tab onClick={() => handleTabClick(2)}>
-                        <LiaCertificateSolid />
-                        Futures Research
-                        <p>
-                          We design business models and growth strategies to be
-                          effective and competitive.
-                        </p>
-                      </Tab>
-                    </TabList>
-                  </Col>
-                  <Col sm={12} md={9} className={styles.imgCon}>
-                    <animated.div
-                      style={imageAnimation}
-                      className={styles.tabPanel}
-                    >
-                      <TabPanel>
-                        <Image
-                          src={ipad1}
-                          alt="ipad.webp"
-                          quality={80}
-                          className={styles.img}
-                        />
-                      </TabPanel>
-                      <TabPanel>
-                        <Image
-                          src={ipad1}
-                          alt="ipad.webp"
-                          quality={80}
-                          className={styles.img}
-                        />
-                      </TabPanel>
-
-                      <TabPanel
-                        className={activeTab === 2 ? styles.activePanel : ''}
-                      >
-                        <Image
-                          src={ipad1}
-                          alt="ipad.webp"
-                          quality={80}
-                          className={styles.img}
-                        />
-                      </TabPanel>
-                    </animated.div>
-                  </Col>
-                </Row>
-              </Tabs>
-            </Col>
-          </Row> */}
-          <Slider />
+          <animated.div style={imageAnimation}>
+            <Slider />
+          </animated.div>
         </Container>
       </div>
     </>

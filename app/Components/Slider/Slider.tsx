@@ -35,9 +35,9 @@ const Sliders: React.FC = () => {
 
   return (
     <>
-      <Container>
+      <Container className={styles.con}>
         <Row>
-          <Col sm={12} md={4}>
+          <Col sm={12} md={12} lg={4}>
             <div className={styles.buttonContainer}>
               <div
                 className={
@@ -45,9 +45,9 @@ const Sliders: React.FC = () => {
                 }
                 onClick={() => handleButtonClick(0)}
               >
-                <article>
-                  <p className={styles.title}>
-                    <span className={styles.icon1}>
+                <article className={styles.article}>
+                  <div className={styles.title}>
+                    <div className={styles.icon1}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -63,13 +63,13 @@ const Sliders: React.FC = () => {
                           stroke-linejoin="round"
                         ></path>
                       </svg>
-                    </span>{' '}
+                    </div>
                     Strategy & Business
-                  </p>
-                  <span className={styles.para}>
+                  </div>
+                  <div className={styles.para}>
                     We design business models and growth strategies to be
                     effective and competitive.
-                  </span>
+                  </div>
                 </article>
               </div>
               <div
@@ -79,8 +79,8 @@ const Sliders: React.FC = () => {
                 onClick={() => handleButtonClick(1)}
               >
                 <article>
-                  <p className={styles.title}>
-                    <span className={styles.icon2}>
+                  <div className={styles.title}>
+                    <div className={styles.icon2}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -110,13 +110,13 @@ const Sliders: React.FC = () => {
                           stroke-linejoin="round"
                         ></path>
                       </svg>
-                    </span>
+                    </div>
                     Product Development
-                  </p>
-                  <span className={styles.para}>
+                  </div>
+                  <div className={styles.para}>
                     We design business models and growth strategies to be
                     effective and competitive.
-                  </span>
+                  </div>
                 </article>
               </div>
               <div
@@ -126,7 +126,7 @@ const Sliders: React.FC = () => {
                 onClick={() => handleButtonClick(2)}
               >
                 <article>
-                  <p className={styles.title}>
+                  <div className={styles.title}>
                     <span className={styles.icon3}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@ const Sliders: React.FC = () => {
                       </svg>
                     </span>
                     Futures Research
-                  </p>
+                  </div>
                   <div className={styles.para}>
                     We design business models and growth strategies to be
                     effective and competitive.
@@ -173,7 +173,7 @@ const Sliders: React.FC = () => {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={8}>
+          <Col sm={12} md={12} lg={8}>
             <div className={styles.sliderContainer}>
               <Slider ref={sliderRef} {...settings} initialSlide={activeTab}>
                 <div>
