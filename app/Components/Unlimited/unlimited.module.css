@@ -1,0 +1,60 @@
+.con {
+  background-color: #f8fafc;
+  background-image: url('/img/bg-pattern-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  --background-overlay: '';
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #e9e9f9 0.76%, #e1e2ff00 100%);
+}
+.con::before {
+  background: var(--overlay-transition, 0.3s),
+    border-radius var(--border-transition, 0.3s),
+    opacity var(--overlay-transition, 0.3s);
+}
+.para {
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+.title {
+  color: var(--secondary-color);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.tablist {
+  list-style: none;
+}
+.imgCon {
+  width: 800px;
+  height: 100%;
+  border: 8px solid #12022f;
+  filter: drop-shadow(0px 5px 20px rgba(18, 2, 47, 0.15));
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+.tablist {
+  cursor: pointer;
+}
+
+.activePanel {
+  background-color: red;
+  color: red !important;
+}

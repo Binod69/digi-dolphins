@@ -1,0 +1,74 @@
+.sliderContainer {
+  width: 900px;
+  height: 560px;
+  border: 8px solid #12022f;
+  filter: drop-shadow(0px 5px 20px rgba(18, 2, 47, 0.15));
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+.buttonContainer {
+  cursor: pointer;
+  width: 100%;
+  padding: 25px;
+  max-width: 100%;
+}
+.title {
+  color: #321370;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+.icon1,
+.icon2,
+.icon3 {
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.icon1 {
+  background-color: #4c6fff2e;
+}
+.icon3 {
+  background-color: #ff6d4340;
+}
+.para {
+  color: #7b88ab;
+  font-size: 16px;
+  line-height: 26px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.activeButton {
+  background: #fff;
+  opacity: 1;
+  box-shadow: 0 5px 20px rgba(18, 2, 47, 0.15);
+  border-radius: 20px;
+  width: 100%;
+  padding: 25px;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.nonActive {
+  margin: 1rem 0;
+  padding: 25px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 567px) {
+  .sliderContainer {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+    height: 560px;
+  }
+}
