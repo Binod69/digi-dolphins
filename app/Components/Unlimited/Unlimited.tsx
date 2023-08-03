@@ -6,10 +6,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { AiOutlineStock } from 'react-icons/ai';
-import { GoPackage } from 'react-icons/go';
-import { LiaCertificateSolid } from 'react-icons/lia';
-// import 'react-tabs/style/react-tabs.css';
 import ipad1 from '../../../public/img/ipad.webp';
 import styles from './unlimited.module.css';
 import Slider from '../Slider/Slider';
@@ -17,7 +13,7 @@ import Slider from '../Slider/Slider';
 const Unlimited = () => {
   const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabClick = (index) => {
+  const handleTabClick = (index: number) => {
     setActiveTab(index);
   };
   const imageAnimation = useSpring({
