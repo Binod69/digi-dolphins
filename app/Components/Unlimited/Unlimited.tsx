@@ -1,12 +1,9 @@
 'use client';
-import Image from 'next/image';
 import { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import ipad1 from '../../../public/img/ipad.webp';
 import styles from './unlimited.module.css';
 import Slider from '../Slider/Slider';
 
