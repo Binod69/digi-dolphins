@@ -2,7 +2,15 @@ import svg from '../public/img/rocket-ship-launch-missile-svgrepo-com.svg';
 import stock from '../public/img/trophy-svgrepo-com.svg';
 import trophy from '../public/img/line-chart-finance-business-svgrepo-com.svg';
 
-const mockData = [
+interface MockDataItem {
+  id: number;
+  title: string;
+  description: string;
+  link: string;
+  icon: any;
+}
+
+const mockData: MockDataItem[] = [
   {
     id: 1,
     title: 'Design-led digital transformation',
