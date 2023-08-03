@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
+import { MdDone } from 'react-icons/md';
 import styles from './pricing.module.css';
 
 const Pricing: React.FC = () => {
@@ -46,39 +47,138 @@ const Pricing: React.FC = () => {
         </Form>
         <Row>
           <Col md={4}>
-            <Card>
+            <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
-                <Card.Title>Product 1</Card.Title>
-                <Card.Text>
-                  {showDiscountedPrice
-                    ? 'Discounted Price: $14.99/year'
-                    : 'Original Price: $19.00/month'}
+                <Card.Title className={styles.cardTitle}>Personal</Card.Title>
+                <Card.Text className={styles.cardText}>
+                  {showDiscountedPrice ? ' $14.99' : ' $19.00'}
                 </Card.Text>
+                <ul className={styles.cardList}>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Unlimited guest reviewers
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Unlimited projects
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Dedicated support
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Lifetime updates
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    No setup fees
+                  </li>
+                </ul>
               </Card.Body>
+              <Card.Footer className={styles.cardFooter}>
+                Start 14-free day trail
+              </Card.Footer>
             </Card>
           </Col>
           <Col md={4}>
-            <Card>
+            <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
-                <Card.Title>Product 2</Card.Title>
-                <Card.Text>
-                  {showDiscountedPrice
-                    ? 'Discounted Price: $24.99/year'
-                    : 'Original Price: $29.00/month'}
+                <Card.Title className={styles.cardTitle}>Start up</Card.Title>
+                <Card.Text className={styles.cardText}>
+                  {showDiscountedPrice ? ' $24.99' : '$29.00'}
                 </Card.Text>
+                <ul className={styles.cardList}>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Unlimited guest reviewers
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Unlimited projects
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Dedicated support
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Lifetime updates
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    No setup fees
+                  </li>
+                </ul>
               </Card.Body>
+              <Card.Footer className={styles.cardFooter}>
+                Start 14-free day trail
+              </Card.Footer>
             </Card>
           </Col>
           <Col md={4}>
-            <Card>
+            <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
-                <Card.Title>Product 3</Card.Title>
-                <Card.Text>
-                  {showDiscountedPrice
-                    ? 'Discounted Price: $49.99/year'
-                    : 'Original Price: $59.00/month'}
+                <Card.Title className={styles.cardTitle}>Business</Card.Title>
+                <Card.Text className={styles.cardText}>
+                  {showDiscountedPrice ? '$49.99' : '$59.00'}
                 </Card.Text>
+                <ul className={styles.cardList}>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Unlimited guest reviewers
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Unlimited projects
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Dedicated support
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    Lifetime updates
+                  </li>
+                  <li>
+                    <span className={styles.iconCon}>
+                      <MdDone size={20} className={styles.icon} />
+                    </span>
+                    No setup fees
+                  </li>
+                </ul>
               </Card.Body>
+              <Card.Footer className={styles.cardFooter}>
+                Start 14-free day trail
+              </Card.Footer>
             </Card>
           </Col>
         </Row>

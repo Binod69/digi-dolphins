@@ -46,6 +46,64 @@
   font-size: 0.875rem;
   line-height: 1.5rem;
 }
+.card {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #e7e5ea;
+}
+
+.cardTitle {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  padding: 1.25rem;
+  font-weight: 700;
+  color: #7b88a8;
+  letter-spacing: -0.4px;
+}
+.cardText {
+  color: #321370;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  letter-spacing: -2.6px;
+  font-weight: 700;
+  border-bottom: 1px solid #e7e5ea;
+  margin-bottom: 1.563rem;
+  padding-bottom: 1.563rem;
+}
+.cardList {
+  font-size: 1.125rem;
+  color: #2d3958;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.iconCon {
+  background-color: rgba(0, 123, 255, 0.2);
+  padding: 0.4rem;
+  border-radius: 50%;
+  margin: 0.4rem;
+}
+
+.icon {
+  color: #4c6fff;
+  margin: 0.8rem 0;
+}
+.cardFooter {
+  padding: 1.125rem 3rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cardFooter:hover {
+  background-color: var(--secondary-color);
+}
 
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .con {
