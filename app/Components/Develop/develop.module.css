@@ -35,16 +35,6 @@
   max-width: 47%;
 }
 
-.cardCon {
-  background-color: #fff;
-  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
-  box-shadow: 0 40px 70px 0 rgba(202.99999999999997, 184, 255, 0.2);
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 60px;
-  padding-left: 40px;
-}
-
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .con {
     margin: 1rem 0;
