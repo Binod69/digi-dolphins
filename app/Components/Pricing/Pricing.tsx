@@ -48,7 +48,7 @@ const Pricing: React.FC = () => {
           <span className={styles.save}>Save 25%</span>
         </Form>
         <Row>
-          <Col md={4}>
+          <Col sm={12} md={12} lg={4}>
             <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
                 <Card.Title className={styles.cardTitle}>Personal</Card.Title>
@@ -93,7 +93,7 @@ const Pricing: React.FC = () => {
               </Card.Footer>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col sm={12} md={12} lg={4}>
             <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
                 <Card.Title className={styles.cardTitle}>Start up</Card.Title>
@@ -138,7 +138,7 @@ const Pricing: React.FC = () => {
               </Card.Footer>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col sm={12} md={12} lg={4}>
             <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
                 <Card.Title className={styles.cardTitle}>Business</Card.Title>
