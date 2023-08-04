@@ -1,0 +1,58 @@
+.con {
+  background-color: #f8fafc;
+  background-image: url('/img/bg-pattern-3.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 5rem 0;
+  /* --background-overlay: '';
+    background-color: transparent;
+    background-image: linear-gradient(0deg, #e9e9f9 0.76%, #e1e2ff00 100%); */
+}
+.con::before {
+  --background-overlay: '';
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #e9e9f9 0.76%, #e1e2ff00 100%);
+}
+.articleCon {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.title {
+  font-size: 2.625rem;
+  line-height: 3.125rem;
+  color: var(--secondary-color);
+  letter-spacing: -2px;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.para {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #7b88a8;
+  margin: 0 auto;
+  max-width: 47%;
+}
+
+.cardCon {
+  background-color: #fff;
+  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  box-shadow: 0 40px 70px 0 rgba(202.99999999999997, 184, 255, 0.2);
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .con {
+    margin: 1rem 0;
+  }
+  .articleCon {
+    margin: 2.5rem 0;
+  }
+  .para {
+    max-width: 100%;
+  }
+}
