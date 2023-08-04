@@ -46,3 +46,25 @@
     max-width: 100%;
   }
 }
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .con {
+    margin: 1rem 0;
+  }
+  .articleCon {
+    margin: 2.5rem 0;
+  }
+  .para {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .con {
+    margin: 1rem 0;
+  }
+  .articleCon {
+    margin: 2.5rem 0;
+  }
+  .para {
+    max-width: 100%;
+  }
+}

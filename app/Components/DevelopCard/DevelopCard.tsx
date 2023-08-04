@@ -127,7 +127,7 @@ const DevelopCard = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mt-5">
+            <Col className="mt-lg-5 mt-md-0 my-5  my-lg-0">
               <div className={styles.cardCon1}>
                 <div className="text-center">
                   <div className="my-lg-5 my-4">
@@ -168,9 +168,9 @@ const DevelopCard = () => {
         </Col>
         <Col
           lg={6}
-          className="d-flex justify-content-center flex-column align-items-center"
+          className=" d-lg-flex justify-content-lg-center flex-lg-column align-items-lg-center"
         >
-          <article className="ms-5">
+          <article className="ms-lg-5">
             <h2 className={styles.title}>
               Strategies that get you on the path to success
             </h2>
