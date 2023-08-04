@@ -1,4 +1,4 @@
-.cardCon {
+.cardCon1 {
   background-color: #fff;
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   box-shadow: 0 2.25rem 4.375rem 0 rgba(202.99999999999997, 184, 255, 0.2);
@@ -6,12 +6,32 @@
   padding-right: 2.25rem;
   padding-bottom: 3.75rem;
   padding-left: 2.25rem;
+  cursor: pointer;
 }
 
-.icon1Con {
-  background-color: #4c6fff2e;
+.cardCon1:hover {
+  transform: translateY(-5%);
+  transition: all 0.5s ease-in-out;
+}
+
+.icon1Con,
+.icon2Con,
+.icon3Con,
+.icon4Con {
   border-radius: 50%;
   padding: 1.5rem;
+}
+.icon1Con {
+  background-color: #4c6fff2e;
+}
+.icon2Con {
+  background-color: #ffc0ec45;
+}
+.icon3Con {
+  background-color: #61dcdf4a;
+}
+.icon4Con {
+  background-color: #6ac75a4f;
 }
 .cardTitle {
   font-size: 1.375rem;
@@ -19,5 +39,50 @@
   line-height: 2rem;
   font-weight: 700;
   letter-spacing: -0.4px;
-  margin-top: 2.5rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 2.875rem;
+  color: var(--secondary-color);
+  letter-spacing: -2px;
+  font-weight: 700;
+  max-width: 70%;
+  margin: 2.5rem 0;
+}
+.para {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #7b88a8;
+  margin: 2.5rem 0;
+  max-width: 80%;
+}
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #fc6fff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .cardTitle {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .title {
+    max-width: 100%;
+    text-align: start;
+  }
+  .para {
+    max-width: 100%;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .cardTitle {
+    max-width: 67%;
+    margin: 0 auto;
+  }
 }

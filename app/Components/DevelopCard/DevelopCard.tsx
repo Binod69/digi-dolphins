@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import styles from './developcard.module.css';
 const DevelopCard = () => {
   return (
@@ -8,9 +10,9 @@ const DevelopCard = () => {
         <Col lg={6}>
           <Row sm={12} md={2} lg={2}>
             <Col>
-              <div className={styles.cardCon}>
+              <div className={styles.cardCon1}>
                 <div className="text-center">
-                  <div className="my-4">
+                  <div className=" my-lg-5  my-4">
                     <span className={styles.icon1Con}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -44,11 +46,11 @@ const DevelopCard = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mt-5">
-              <div className={styles.cardCon}>
+            <Col className="mt-lg-5 mt-md-0 my-5  my-lg-0">
+              <div className={styles.cardCon1}>
                 <div className="text-center">
-                  <div className="my-4">
-                    <span className={styles.icon1Con}>
+                  <div className="my-lg-5 my-4 ">
+                    <span className={styles.icon2Con}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -89,10 +91,10 @@ const DevelopCard = () => {
               </div>
             </Col>
             <Col>
-              <div className={styles.cardCon}>
+              <div className={styles.cardCon1}>
                 <div className="text-center">
-                  <div className="my-4">
-                    <span className={styles.icon1Con}>
+                  <div className="my-lg-5 my-4">
+                    <span className={styles.icon3Con}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -126,10 +128,10 @@ const DevelopCard = () => {
               </div>
             </Col>
             <Col className="mt-5">
-              <div className={styles.cardCon}>
+              <div className={styles.cardCon1}>
                 <div className="text-center">
-                  <div className="mt-4">
-                    <span className={styles.icon1Con}>
+                  <div className="my-lg-5 my-4">
+                    <span className={styles.icon4Con}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -164,8 +166,24 @@ const DevelopCard = () => {
             </Col>
           </Row>
         </Col>
-        <Col lg={6}>
-          <h2>hello</h2>
+        <Col
+          lg={6}
+          className="d-flex justify-content-center flex-column align-items-center"
+        >
+          <article className="ms-5">
+            <h2 className={styles.title}>
+              Strategies that get you on the path to success
+            </h2>
+            <p className={styles.para}>
+              Through an in-depth knowledge of all industrial sectors and the
+              application of approaches such as Lean Strategy, and Business
+              Design, we prepare organisations to welcome change, to be ready to
+              evolve rapidly while remaining competitive in the market.
+            </p>
+            <Link href="/" className={styles.link}>
+              See how it works <AiOutlineArrowRight />
+            </Link>
+          </article>
         </Col>
       </Row>
     </>
