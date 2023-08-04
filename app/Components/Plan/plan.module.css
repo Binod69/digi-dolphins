@@ -1,0 +1,73 @@
+.con {
+  position: relative;
+}
+.articleCon {
+  text-align: center;
+}
+.title {
+  font-size: 2.625rem;
+  color: var(--secondary-color);
+  line-height: 3.125rem;
+  letter-spacing: -2px;
+  font-weight: 700;
+  max-width: 67%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.para {
+  font-size: 1.125rem;
+  color: #7b88a8;
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+.fig {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+    max-width: 100%;
+    padding: 0.5rem;
+    line-height: 2.5rem;
+  }
+  .para {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  .fig {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .title {
+    max-width: 100%;
+    padding: 0.5rem;
+    line-height: 2.5rem;
+  }
+  .para {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  .fig {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .title {
+    max-width: 100%;
+    padding: 0.5rem;
+    line-height: 2.5rem;
+  }
+  .para {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  .fig {
+    display: none;
+  }
+}

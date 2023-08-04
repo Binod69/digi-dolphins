@@ -7,6 +7,7 @@ import styles from './banner.module.css';
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from '@react-spring/web';
+import Btn from '../ui/Btn';
 
 const Banner = () => {
   const { ref, inView } = useInView({ triggerOnce: false });
@@ -49,9 +50,7 @@ const Banner = () => {
                   </article>
 
                   <div className={styles.btnContainer}>
-                    <button className={`${styles.disBtn} mt-4`}>
-                      Discover Now
-                    </button>
+                    <Btn btnTitle={'Get Started'} />
                     <button className={`${styles.howBtn}`}>How it Works</button>
                   </div>
                 </animated.div>

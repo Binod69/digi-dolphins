@@ -6,3 +6,4 @@ export { default as Pricing } from './Pricing/Pricing';
 export { default as Slider } from './Slider/Slider';
 export { default as Unlimited } from './Unlimited/Unlimited';
 export { default as Trusted } from './Trusted/Trusted';
+export { default as Plan } from './Plan/Plan';

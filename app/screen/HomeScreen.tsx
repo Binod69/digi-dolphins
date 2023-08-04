@@ -6,6 +6,7 @@ import {
   Pricing,
   Unlimited,
   Trusted,
+  Plan,
 } from '../Components/index';
 const HomeScreen = () => {
   return (
@@ -17,6 +18,7 @@ const HomeScreen = () => {
       <Pricing />
       <Develop />
       <Trusted />
+      <Plan />
     </>
   );
 };

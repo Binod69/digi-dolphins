@@ -1,6 +1,6 @@
-import Button from 'react-bootstrap/Button';
+import styles from './btn.module.css';
 const Btn = ({ btnTitle }: { btnTitle: string }) => {
-  return <Button>{btnTitle}</Button>;
+  return <button className={`${styles.disBtn} mt-4`}>{btnTitle}</button>;
 };
 
 export default Btn;

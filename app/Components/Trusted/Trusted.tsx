@@ -49,6 +49,7 @@ const Trusted = () => {
             </figure>
           </Col>
         </Row>
+        <hr className="my-5" />
       </Container>
     </>
   );

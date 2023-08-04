@@ -38,6 +38,11 @@
     text-align: center;
     margin: 0px 0px 2.8125rem;
   }
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .disBtn {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -46,7 +51,6 @@
     border-radius: 5px;
     transition: all 0.3s;
     display: block;
-    margin: 0 auto;
   }
   .disBtn:hover {
     background-color: var(--secondary-color);
