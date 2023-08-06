@@ -1,0 +1,26 @@
+.title {
+  color: #2d3958;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 3.125rem;
+  margin-bottom: 1rem;
+}
+
+.para {
+  color: #7b88a8;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.accTitle {
+  font-size: 5.125rem !important;
+  color: #2d3958 !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .title {
+    font-size: 2.25rem;
+    text-align: center;
+    max-width: 100%;
+  }
+}

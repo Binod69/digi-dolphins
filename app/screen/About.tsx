@@ -1,4 +1,9 @@
-import { AboutBanner, Pricing, Develop, Accordion } from '../Components/index';
+import {
+  AboutBanner,
+  Pricing,
+  Develop,
+  AboutAccordion,
+} from '../Components/index';
 
 const About = () => {
   return (
@@ -28,7 +33,7 @@ const About = () => {
           'We design new concepts, prototypes and processes for the next generation of services and experiences, ready for the market.'
         }
       />
-      <Accordion />
+      <AboutAccordion />
     </>
   );
 };
