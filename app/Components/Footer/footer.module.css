@@ -40,3 +40,30 @@
 .link:hover {
   color: #cbcacf;
 }
+
+.row {
+  border-top: 1px solid #e7e5eab3;
+}
+
+.copyrightArticle,
+.figureCon {
+  margin: 1rem;
+}
+
+.copyTitle {
+  color: #e7e5eab3;
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .articleCon {
+    margin: 0;
+    padding-top: 1rem;
+  }
+  .para {
+    margin-top: 1rem;
+  }
+  .productTitle {
+    margin: 0;
+  }
+}
