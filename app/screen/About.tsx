@@ -18,6 +18,7 @@ const About = () => {
         priceTitle2={'Startup'}
         priceTitle3={'Business'}
       />
+
       <Pricing
         title={'Ecommerce Plans'}
         para={
@@ -27,6 +28,7 @@ const About = () => {
         priceTitle2={'Startup'}
         priceTitle3={'Business'}
       />
+
       <Develop
         title={'Custom Enterprise Plan'}
         para={
