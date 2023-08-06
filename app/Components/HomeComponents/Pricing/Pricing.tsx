@@ -10,7 +10,21 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import styles from './pricing.module.css';
 import Link from 'next/link';
 
-const Pricing: React.FC = () => {
+interface PricingProps {
+  title: string;
+  para: string;
+  priceTitle1: string;
+  priceTitle2: string;
+  priceTitle3: string;
+}
+
+const Pricing: React.FC<PricingProps> = ({
+  title,
+  para,
+  priceTitle1,
+  priceTitle2,
+  priceTitle3,
+}) => {
   const [showDiscountedPrice, setShowDiscountedPrice] =
     useState<boolean>(false);
 
@@ -24,13 +38,8 @@ const Pricing: React.FC = () => {
         <Row>
           <Col sm={12} md={12} lg={12}>
             <article className={styles.articleCon}>
-              <h2 className={styles.title}>
-                Pricing built for businesses of all sizes
-              </h2>
-              <p className={styles.para}>
-                Scale your software operations through a custom engineering
-                team. Meet the demand of your company’s
-              </p>
+              <h2 className={styles.title}>{title}</h2>
+              <p className={styles.para}>{para}</p>
             </article>
           </Col>
           <Col sm={12} md={12} lg={12} className="text-center"></Col>
@@ -51,7 +60,9 @@ const Pricing: React.FC = () => {
           <Col sm={12} md={12} lg={4}>
             <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
-                <Card.Title className={styles.cardTitle}>Personal</Card.Title>
+                <Card.Title className={styles.cardTitle}>
+                  {priceTitle1}
+                </Card.Title>
                 <Card.Text className={styles.cardText}>
                   {showDiscountedPrice ? ' $19.00' : ' $14.99'}
                 </Card.Text>
@@ -96,7 +107,9 @@ const Pricing: React.FC = () => {
           <Col sm={12} md={12} lg={4}>
             <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
-                <Card.Title className={styles.cardTitle}>Start up</Card.Title>
+                <Card.Title className={styles.cardTitle}>
+                  {priceTitle2}
+                </Card.Title>
                 <Card.Text className={styles.cardText}>
                   {showDiscountedPrice ? ' $29.00' : '$24.99'}
                 </Card.Text>
@@ -141,7 +154,9 @@ const Pricing: React.FC = () => {
           <Col sm={12} md={12} lg={4}>
             <Card className={`${styles.card} my-3 my-lg-0`}>
               <Card.Body>
-                <Card.Title className={styles.cardTitle}>Business</Card.Title>
+                <Card.Title className={styles.cardTitle}>
+                  {priceTitle3}
+                </Card.Title>
                 <Card.Text className={styles.cardText}>
                   {showDiscountedPrice ? '$59.00' : '$49.99'}
                 </Card.Text>

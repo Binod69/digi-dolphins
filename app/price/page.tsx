@@ -1,7 +1,15 @@
-import React from 'react';
-
+import { Metadata } from 'next';
+import About from '../screen/About';
+export const metadata: Metadata = {
+  title: 'Pricing - Digi Dolphins',
+  description: 'About digi dolphins',
+};
 const page = () => {
-  return <div>price page</div>;
+  return (
+    <>
+      <About />
+    </>
+  );
 };
 
 export default page;

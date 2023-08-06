@@ -7,3 +7,5 @@ export { default as Slider } from './HomeComponents/Slider/Slider';
 export { default as Unlimited } from './HomeComponents/Unlimited/Unlimited';
 export { default as Trusted } from './HomeComponents/Trusted/Trusted';
 export { default as Plan } from './HomeComponents/Plan/Plan';
+export { default as AboutBanner } from './AboutComponents/Banner/Banner';
+export { default as Accordion } from './AboutComponents/Accordion/Accordion';

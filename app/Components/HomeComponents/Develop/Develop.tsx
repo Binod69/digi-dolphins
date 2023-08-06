@@ -4,9 +4,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './develop.module.css';
-import { AiOutlineArrowRight } from 'react-icons/ai';
 import DevelopCard from '../DevelopCard/DevelopCard';
-const Develop = () => {
+
+interface DevelopProps {
+  title: string;
+  para: string;
+}
+const Develop: React.FC<DevelopProps> = ({ title, para }) => {
   return (
     <>
       <div className={styles.con}>
@@ -14,17 +18,12 @@ const Develop = () => {
           <Row>
             <Col>
               <article className={styles.articleCon}>
-                <h2 className={styles.title}>
-                  Develop your next business today
-                </h2>
-                <p className={styles.para}>
-                  We design new concepts, prototypes and processes for the next
-                  generation of services and experiences, ready for the market.
-                </p>
+                <h2 className={styles.title}>{title}</h2>
+                <p className={styles.para}>{para}</p>
               </article>
             </Col>
           </Row>
-          <DevelopCard />
+          <DevelopCard linkTitle={'See How it Works'} />
         </Container>
       </div>
     </>

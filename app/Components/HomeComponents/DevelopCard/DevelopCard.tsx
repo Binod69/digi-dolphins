@@ -3,7 +3,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import styles from './developcard.module.css';
-const DevelopCard = () => {
+interface DevelopCardProps {
+  linkTitle: string;
+}
+const DevelopCard: React.FC<DevelopCardProps> = ({ linkTitle }) => {
   return (
     <>
       <Row>
@@ -181,7 +184,7 @@ const DevelopCard = () => {
               evolve rapidly while remaining competitive in the market.
             </p>
             <Link href="/" className={styles.link}>
-              See how it works <AiOutlineArrowRight />
+              {linkTitle} <AiOutlineArrowRight />
             </Link>
           </article>
         </Col>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Digi Dolphins',
+  title: 'About-Digi Dolphins',
   description: 'About digi dolphins',
 };
 const page = () => {
