@@ -1,13 +1,14 @@
 'use client';
-import { Col, Container, Row } from 'react-bootstrap';
-import { useTypewriter } from 'react-simple-typewriter';
-import BannerImage from '../../../public/img/digi-hero.jpeg';
-
-import styles from './banner.module.css';
 import Image from 'next/image';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { useTypewriter } from 'react-simple-typewriter';
+import BannerImage from '../../../../public/img/digi-hero.jpeg';
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from '@react-spring/web';
-import Btn from '../ui/Btn';
+import Btn from '../../ui/Btn';
+import styles from './banner.module.css';
 
 const Banner = () => {
   const { ref, inView } = useInView({ triggerOnce: false });

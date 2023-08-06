@@ -5,9 +5,9 @@ import Col from 'react-bootstrap/Col';
 import styles from './info.module.css';
 import Link from 'next/link';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import mockData from '../../mockData';
+import mockData from '../../../mockData';
 import Image from 'next/image';
-import business from '../../../public/img/business-bg-1.webp';
+import business from '../../../../public/img/business-bg-1.webp';
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from '@react-spring/web';
 

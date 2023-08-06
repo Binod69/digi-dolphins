@@ -3,11 +3,11 @@ import Image from 'next/image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import trust from '../../../public/img/1.webp';
-import aws from '../../../public/img/2.webp';
-import spotify from '../../../public/img/3.webp';
-import company from '../../../public/img/4.webp';
-import forbes from '../../../public/img/5.webp';
+import trust from '../../../../public/img/1.webp';
+import aws from '../../../../public/img/2.webp';
+import spotify from '../../../../public/img/3.webp';
+import company from '../../../../public/img/4.webp';
+import forbes from '../../../../public/img/5.webp';
 import styles from './trusted.module.css';
 const Trusted = () => {
   return (

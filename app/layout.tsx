@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
-import Navbars from './Components/NavBar/Navbar';
-import Footer from './Components/Footer/Footer';
+import Navbars from './Components/HomeComponents/NavBar/Navbar';
+import Footer from './Components/HomeComponents/Footer/Footer';
 
 const dm_sans = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '700'] });
 

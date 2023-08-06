@@ -1,11 +1,11 @@
 'use client';
+import Image from 'next/image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Btn from '../ui/Btn';
-import bgpattern from '../../../public/img/bg-pattern0.webp';
+import Btn from '../../ui/Btn';
+import bgpattern from '../../../../public/img/bg-pattern0.webp';
 import styles from './plan.module.css';
-import Image from 'next/image';
 
 const Plan = () => {
   return (

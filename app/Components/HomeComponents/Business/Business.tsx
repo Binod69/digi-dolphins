@@ -1,13 +1,15 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from '@react-spring/web';
 import CountUp from 'react-countup';
 import Image from 'next/image';
+import image from '../../../../public/img/business-imgg.webp';
+import imageBox from '../../../../public/img/img-box.webp';
 import styles from './business.module.css';
-import image from '../../../public/img/business-imgg.webp';
-import imageBox from '../../../public/img/img-box.webp';
 
 interface AnimatedContentProps {
   title: string;

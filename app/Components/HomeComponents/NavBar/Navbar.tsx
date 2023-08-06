@@ -5,9 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Link from 'next/link';
-import logo from '../../../public/img/logo.webp';
-import Image from 'next/image';
-
 import styles from './navbar.module.css';
 const Navbars = () => {
   return (
@@ -44,8 +41,20 @@ const Navbars = () => {
                   >
                     About Us
                   </Link>
+                  <Link
+                    className={`${styles.color} nav-link me-lg-4`}
+                    href="/services"
+                  >
+                    Services
+                  </Link>
+                  <Link
+                    className={`${styles.color} nav-link me-lg-4`}
+                    href="/price"
+                  >
+                    Pricing
+                  </Link>
 
-                  <NavDropdown
+                  {/* <NavDropdown
                     title="Features"
                     id="offcanvasNavbarDropdown-expand-sm"
                     className={`${styles.color}  me-lg-4`}
@@ -72,7 +81,7 @@ const Navbars = () => {
                     <NavDropdown.Item href="#action/3.4">
                       Surprise with an event
                     </NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
                   <Link
                     className={`${styles.color} nav-link me-lg-4`}
                     href="https://my-personal-blogs.vercel.app/"
