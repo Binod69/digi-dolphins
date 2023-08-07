@@ -22,6 +22,79 @@
   margin: 0 auto;
 }
 
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e7e5ea;
+  border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+  box-shadow: 0 1.25rem 0.625rem 0 transparent;
+  padding: 1.875rem 1.875rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 1.25rem 0.625rem 0 var(--linear-gradient1);
+}
+.iconCon1,
+.iconCon2,
+.iconCon3 {
+  display: inline-block;
+  width: 15%;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.iconCon1 {
+  background-color: #fff9e7;
+}
+
+.iconCon2 {
+  background-color: #fff9e7;
+}
+
+.iconCon3 {
+  background-color: #e9e3fc;
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #2d3958;
+}
+
+.cardPara {
+  font-size: 1.11rem;
+  color: #7b88a8;
+}
+
+.cardBtn {
+  fill: var(--primary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: #02010100;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 1.5rem;
+  padding: 1.2rem 2rem;
+
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.cardBtn:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 1.2rem 2rem;
+  color: var(--white-color);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .para {
     max-width: 100%;

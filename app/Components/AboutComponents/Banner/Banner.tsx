@@ -15,6 +15,7 @@ const AboutBanner = () => {
             src={about}
             alt="about.webp"
             quality={80}
+            placeholder="blur"
           />
         </figure>
       </div>
