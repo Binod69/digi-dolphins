@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import about from '../../../../public/img/about.webp';
 import styles from './banner.module.css';
-const AboutBanner = () => {
+const PricingBanner = () => {
   return (
     <>
       <div>
@@ -23,4 +23,4 @@ const AboutBanner = () => {
   );
 };
 
-export default AboutBanner;
+export default PricingBanner;

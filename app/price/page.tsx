@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import About from '../screen/AboutScreen';
+import PricingScreen from '../screen/PricingScreen';
 export const metadata: Metadata = {
   title: 'Pricing - Digi Dolphins',
   description: 'About digi dolphins',
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <About />
+      <PricingScreen />
     </>
   );
 };

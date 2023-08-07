@@ -2,7 +2,9 @@ import {
   CounterService,
   Outstanding,
   Pricing,
+  PricingAccordion,
   ServiceBanner,
+  Trusted,
   Unlimited,
 } from '../Components';
 
@@ -25,6 +27,8 @@ const Service = () => {
         priceTitle2={'StartUp'}
         priceTitle3={'Business'}
       />
+      <PricingAccordion />
+      <Trusted />
     </>
   );
 };

@@ -7,7 +7,7 @@ import Btn from '../../ui/Btn';
 
 import styles from './accordion.module.css';
 
-const AboutAccordion = () => {
+const PricingAccordion = () => {
   return (
     <>
       <Container className="my-5">
@@ -131,4 +131,4 @@ const AboutAccordion = () => {
   );
 };
 
-export default AboutAccordion;
+export default PricingAccordion;

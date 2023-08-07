@@ -1,14 +1,14 @@
 import {
-  AboutBanner,
+  PricingBanner,
   Pricing,
   Develop,
-  AboutAccordion,
+  PricingAccordion,
 } from '../Components/index';
 
-const About = () => {
+const PricingScreen = () => {
   return (
     <>
-      <AboutBanner />
+      <PricingBanner />
       <Pricing
         title={'Pricing built for Workspaces'}
         para={
@@ -35,9 +35,9 @@ const About = () => {
           'We design new concepts, prototypes and processes for the next generation of services and experiences, ready for the market.'
         }
       />
-      <AboutAccordion />
+      <PricingAccordion />
     </>
   );
 };
 
-export default About;
+export default PricingScreen;
