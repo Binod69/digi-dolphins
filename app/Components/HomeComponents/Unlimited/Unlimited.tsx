@@ -7,7 +7,12 @@ import Col from 'react-bootstrap/Col';
 import styles from './unlimited.module.css';
 import Slider from '../Slider/Slider';
 
-const Unlimited = () => {
+interface unlimitedProps {
+  title: string;
+  description: string;
+}
+
+const Unlimited: React.FC<unlimitedProps> = ({ title, description }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index: number) => {
@@ -24,12 +29,8 @@ const Unlimited = () => {
           <Row className="my-5">
             <Col>
               <article className={styles.articleCon}>
-                <p className={styles.para}>
-                  HELPING ENTREPRENEURS MAKE MORE MONEY
-                </p>
-                <h2 className={styles.title}>
-                  Unlimited cash back, zero fees, no credit check
-                </h2>
+                <p className={styles.para}>{description}</p>
+                <h2 className={styles.title}>{title}</h2>
               </article>
             </Col>
           </Row>

@@ -14,7 +14,10 @@ const HomeScreen = () => {
       <Banner />
       <Info />
       <Business />
-      <Unlimited />
+      <Unlimited
+        title={'Unlimited cash back, zero fees, no credit check'}
+        description={'HELPING ENTREPRENEURS MAKE MORE MONEY'}
+      />
       <Pricing
         title={'Pricing built for businesses of all sizes'}
         para={

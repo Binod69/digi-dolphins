@@ -8,7 +8,7 @@ const CounterService = () => {
   return (
     <>
       <Container>
-        <Row>
+        <Row className={styles.con}>
           <Col md={6} lg={3} className="my-3">
             <AnimatedCount
               title={'Total Users'}

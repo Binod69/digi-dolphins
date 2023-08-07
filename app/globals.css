@@ -33,6 +33,8 @@ p {
   font-size: 1.125rem;
   color: #2d3958;
 }
+
+/*CounterService components styles start */
 .con1,
 .con2,
 .con3,
@@ -66,3 +68,4 @@ p {
   font-weight: 700;
   margin-left: 1rem;
 }
+/*CounterService components styles ends */

@@ -1,4 +1,9 @@
-import { CounterService, Outstanding, ServiceBanner } from '../Components';
+import {
+  CounterService,
+  Outstanding,
+  ServiceBanner,
+  Unlimited,
+} from '../Components';
 
 const Service = () => {
   return (
@@ -6,6 +11,10 @@ const Service = () => {
       <ServiceBanner />
       <Outstanding />
       <CounterService />
+      <Unlimited
+        title={'Focus on cutting-edge technologies and cost-quality efficiency'}
+        description={'HELPING ENTREPRENEURS MAKE MORE MONEY'}
+      />
     </>
   );
 };
