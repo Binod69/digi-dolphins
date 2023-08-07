@@ -12,3 +12,4 @@ export { default as PricingAccordion } from './PricingComponents/Accordion/Accor
 export { default as ServiceBanner } from './ServicesComponents/ServiceBanner/ServiceBanner';
 export { default as Outstanding } from './ServicesComponents/Outstanding/Outstanding';
 export { default as CounterService } from './ServicesComponents/CounterService/CounterService';
+export { default as ServiceSlide } from './ServicesComponents/ServiceSlide/ServiceSlide';
