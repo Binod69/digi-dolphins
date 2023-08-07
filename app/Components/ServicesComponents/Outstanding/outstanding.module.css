@@ -1,0 +1,54 @@
+.articleCon {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.para {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: var(--primary-color);
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #2d3958;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .para {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 2.25rem;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .para {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 2.625rem;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .para {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 2.625rem;
+    max-width: 100%;
+  }
+}

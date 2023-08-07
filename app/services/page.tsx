@@ -1,7 +1,11 @@
-import React from 'react';
+import Service from '../screen/ServiceScreen';
 
 const page = () => {
-  return <div>servicepage</div>;
+  return (
+    <>
+      <Service />
+    </>
+  );
 };
 
 export default page;

@@ -9,3 +9,5 @@ export { default as Trusted } from './HomeComponents/Trusted/Trusted';
 export { default as Plan } from './HomeComponents/Plan/Plan';
 export { default as AboutBanner } from './AboutComponents/Banner/Banner';
 export { default as AboutAccordion } from './AboutComponents/Accordion/Accordion';
+export { default as ServiceBanner } from './ServicesComponents/ServiceBanner/ServiceBanner';
+export { default as Outstanding } from './ServicesComponents/Outstanding/Outstanding';
