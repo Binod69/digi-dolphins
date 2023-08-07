@@ -28,7 +28,7 @@ const Outstanding = () => {
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
                   Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  the bulk of the card&apos;s content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -40,7 +40,7 @@ const Outstanding = () => {
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
                   Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  the bulk of the card&apos;s content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -52,7 +52,7 @@ const Outstanding = () => {
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
                   Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  the bulk of the card&apos;s content.
                 </Card.Text>
               </Card.Body>
             </Card>
