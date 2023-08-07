@@ -8,11 +8,11 @@ import {
   Trusted,
   Unlimited,
 } from '../Components';
-
+import service from '../../public/img/service.webp';
 const Service = () => {
   return (
     <>
-      <ServiceBanner />
+      <ServiceBanner image={service} />
       <Outstanding />
       <CounterService />
       <Unlimited

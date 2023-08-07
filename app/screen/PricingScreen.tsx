@@ -5,10 +5,12 @@ import {
   PricingAccordion,
 } from '../Components/index';
 
+import pricing from '../../public/img/about.webp';
+
 const PricingScreen = () => {
   return (
     <>
-      <PricingBanner />
+      <PricingBanner image={pricing} />
       <Pricing
         title={'Pricing built for Workspaces'}
         para={

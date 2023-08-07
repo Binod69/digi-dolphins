@@ -14,3 +14,4 @@ export { default as Outstanding } from './ServicesComponents/Outstanding/Outstan
 export { default as CounterService } from './ServicesComponents/CounterService/CounterService';
 export { default as ServiceSlide } from './ServicesComponents/ServiceSlide/ServiceSlide';
 export { default as CustomerReviews } from './ServicesComponents/ServiceSlide/CustomerReviews';
+export { default as AboutGrowth } from './AboutComponents/AboutBanner/AboutGrowth';

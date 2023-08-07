@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import AboutScreen from '../screen/AboutScreen';
 
 export const metadata: Metadata = {
   title: 'About-Digi Dolphins',
@@ -6,9 +7,9 @@ export const metadata: Metadata = {
 };
 const page = () => {
   return (
-    <div>
-      <h2>About page</h2>
-    </div>
+    <>
+      <AboutScreen />
+    </>
   );
 };
 
