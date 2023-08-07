@@ -13,3 +13,4 @@ export { default as ServiceBanner } from './ServicesComponents/ServiceBanner/Ser
 export { default as Outstanding } from './ServicesComponents/Outstanding/Outstanding';
 export { default as CounterService } from './ServicesComponents/CounterService/CounterService';
 export { default as ServiceSlide } from './ServicesComponents/ServiceSlide/ServiceSlide';
+export { default as CustomerReviews } from './ServicesComponents/ServiceSlide/CustomerReviews';

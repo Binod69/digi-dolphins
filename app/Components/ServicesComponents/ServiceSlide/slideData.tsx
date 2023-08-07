@@ -1,5 +1,6 @@
+import avatar1 from '../../../../public/img/avatar-1.webp';
 import avatar2 from '../../../../public/img/avatar-2.webp';
-
+import avatar3 from '../../../../public/img/avatar-3.webp';
 interface MockData {
   id: number;
   image: any;
@@ -12,7 +13,7 @@ interface MockData {
 const slideData: MockData[] = [
   {
     id: 1,
-    image: avatar2,
+    image: avatar1,
     name: 'John Doe',
     rating: 4.5,
     description:
@@ -30,7 +31,7 @@ const slideData: MockData[] = [
   },
   {
     id: 3,
-    image: avatar2,
+    image: avatar3,
     name: 'Michael Johnson',
     rating: 3.8,
     description:
@@ -40,7 +41,7 @@ const slideData: MockData[] = [
   },
   {
     id: 4,
-    image: avatar2,
+    image: avatar3,
     name: 'Emily Williams',
     rating: 4.7,
     description:
@@ -59,7 +60,7 @@ const slideData: MockData[] = [
   },
   {
     id: 6,
-    image: avatar2,
+    image: avatar1,
     name: 'Sarah Brown',
     rating: 4.9,
     description:

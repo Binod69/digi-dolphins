@@ -4,7 +4,7 @@ import {
   Pricing,
   PricingAccordion,
   ServiceBanner,
-  ServiceSlide,
+  CustomerReviews,
   Trusted,
   Unlimited,
 } from '../Components';
@@ -28,7 +28,7 @@ const Service = () => {
         priceTitle2={'StartUp'}
         priceTitle3={'Business'}
       />
-      <ServiceSlide />
+      <CustomerReviews />
       <PricingAccordion />
       <Trusted />
     </>

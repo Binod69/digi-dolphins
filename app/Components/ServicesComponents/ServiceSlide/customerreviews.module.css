@@ -1,0 +1,60 @@
+.con {
+  background-color: #f8fafc;
+  min-height: 85dvh;
+  margin: 6rem 0;
+}
+
+.articleCon {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.title {
+  color: #2d3958;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .con {
+    width: 100%;
+    min-height: 100dvh;
+    margin: 0;
+    overflow: hidden;
+  }
+  .articleCon {
+    margin: 2.5rem 0;
+  }
+  .title {
+    font-size: 2.25rem;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .con {
+    min-height: 70dvh;
+    margin: 0;
+  }
+  .articleCon {
+    margin: 2.5rem 0;
+  }
+  .title {
+    font-size: 2.5rem;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .con {
+    min-height: 60dvh;
+    margin: 0;
+  }
+  .articleCon {
+    margin: 2.5rem 0;
+  }
+  .title {
+    max-width: 100%;
+  }
+}
