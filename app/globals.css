@@ -33,3 +33,36 @@ p {
   font-size: 1.125rem;
   color: #2d3958;
 }
+.con1,
+.con2,
+.con3,
+.con4 {
+  padding: 20px 25px 20px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con1 {
+  background-color: #e1fcdc;
+}
+.con2 {
+  background-color: #e3e8ff;
+}
+.con3 {
+  background-color: #ffedef;
+}
+.con4 {
+  background-color: #fff9e6;
+}
+.counter {
+  color: #2d3958;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+}
+.title {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}

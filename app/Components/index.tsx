@@ -11,3 +11,4 @@ export { default as AboutBanner } from './AboutComponents/Banner/Banner';
 export { default as AboutAccordion } from './AboutComponents/Accordion/Accordion';
 export { default as ServiceBanner } from './ServicesComponents/ServiceBanner/ServiceBanner';
 export { default as Outstanding } from './ServicesComponents/Outstanding/Outstanding';
+export { default as CounterService } from './ServicesComponents/CounterService/CounterService';
