@@ -1,0 +1,122 @@
+.con {
+  background-color: #f8fafc;
+  background-image: url('../../../../public/img/bg-pattern-1.png');
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.articleCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -2px;
+  font-weight: 700;
+  color: #2d3958;
+  max-width: 50%;
+  text-align: center;
+}
+
+.para {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+
+.cardCon1,
+.cardCon2,
+.cardCon3 {
+  width: 75%;
+  height: 100%;
+  padding: 25px;
+  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  box-shadow: 0 5px 20px rgba(18, 2, 47, 0.15);
+}
+
+.iconCon1,
+.iconCon2,
+.iconCon3 {
+  padding: 0.875rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+.iconCon1 {
+  background-color: #4c6fff38;
+}
+.iconCon2 {
+  background-color: #6ac75a40;
+}
+
+.iconCon3 {
+  background-color: #ff6d4340;
+}
+
+.cardTitle {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.cardPara {
+  font-size: 1.125rem;
+  color: #7b88a8;
+  text-align: center;
+  max-width: 80%;
+  margin-left: 4rem;
+  text-align: start;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .articleCon {
+    display: flex;
+  }
+  .title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    max-width: 100%;
+  }
+  .cardCon1,
+  .cardCon2,
+  .cardCon3 {
+    width: 100%;
+  }
+  .cardPara {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .articleCon {
+    display: flex;
+  }
+  .title {
+    line-height: 2.75rem;
+    max-width: 100%;
+  }
+  .cardCon1,
+  .cardCon2,
+  .cardCon3 {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .articleCon {
+    display: flex;
+  }
+  .title {
+    line-height: 2.75rem;
+    max-width: 100%;
+  }
+  .cardCon1,
+  .cardCon2,
+  .cardCon3 {
+    margin: 0 auto;
+  }
+}

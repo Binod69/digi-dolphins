@@ -15,3 +15,4 @@ export { default as CounterService } from './ServicesComponents/CounterService/C
 export { default as ServiceSlide } from './ServicesComponents/ServiceSlide/ServiceSlide';
 export { default as CustomerReviews } from './ServicesComponents/ServiceSlide/CustomerReviews';
 export { default as AboutGrowth } from './AboutComponents/AboutGrowth/AboutGrowth';
+export { default as Developing } from './AboutComponents/Developing/Developing';
