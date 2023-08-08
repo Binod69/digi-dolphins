@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import styles from './developing.module.css';
+import Btn from '../../ui/Btn';
 const Developing = () => {
   return (
     <>
@@ -151,7 +152,23 @@ const Developing = () => {
                 </Col>
               </Row>
             </Col>
-            <Col lg={6}></Col>
+            <Col lg={6} className=" d-flex flex-column justify-content-center ">
+              <article className={styles.articleRight}>
+                <h2 className={styles.rightTitle}>
+                  Strategies that get you on the path to success
+                </h2>
+                <p className={styles.rightPara}>
+                  What if blockchain adoption didn’t mean crypto adoption? A
+                  stablecoin as our gas token removes transaction volatility and
+                  speculation. We are creating the next class of blockchain,
+                  built on the principle of economic sustainability.
+                </p>
+              </article>
+              <div>
+                <Btn btnTitle={'Our Services'} />
+                <button className={`${styles.howBtn}`}>How it Works</button>
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>
