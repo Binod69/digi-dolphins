@@ -1,9 +1,16 @@
 'use client';
+import Image from 'next/image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdOutlineDone } from 'react-icons/md';
+
+import image1 from '../../../../public/img/exp-about-1.webp';
+import image2 from '../../../../public/img/exp-about-2.webp';
+import image3 from '../../../../public/img/exp-about-3.webp';
+import image4 from '../../../../public/img/exp-about-4.webp';
 import styles from './featuresabout.module.css';
+
 const FeaturesAbout = () => {
   return (
     <>
@@ -58,7 +65,42 @@ const FeaturesAbout = () => {
                 </div>
               </article>
             </Col>
-            <Col lg={6}></Col>
+            <Col lg={6}>
+              <Row>
+                <Col className={styles.leftCon}>
+                  <figure className="mb-4">
+                    <Image
+                      className={styles.img}
+                      src={image1}
+                      alt="image.webp"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      className={styles.img}
+                      src={image2}
+                      alt="image2.webp"
+                    />
+                  </figure>
+                </Col>
+                <Col className={styles.rightCon}>
+                  <figure className="mb-4">
+                    <Image
+                      className={styles.img}
+                      src={image3}
+                      alt="image.webp"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      className={styles.img}
+                      src={image4}
+                      alt="image2.webp"
+                    />
+                  </figure>
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </Container>
       </div>
