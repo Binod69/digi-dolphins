@@ -68,7 +68,7 @@ const FeaturesAbout = () => {
             <Col lg={6}>
               <Row>
                 <Col className={styles.leftCon}>
-                  <figure className="mb-4">
+                  <figure className="mb-lg-4">
                     <Image
                       className={styles.img}
                       src={image1}
@@ -84,7 +84,7 @@ const FeaturesAbout = () => {
                   </figure>
                 </Col>
                 <Col className={styles.rightCon}>
-                  <figure className="mb-4">
+                  <figure className="mb-lg-4">
                     <Image
                       className={styles.img}
                       src={image3}

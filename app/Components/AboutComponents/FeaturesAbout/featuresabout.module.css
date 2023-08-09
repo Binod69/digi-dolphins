@@ -58,6 +58,10 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 576px) {
+  .articleCon {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
   .title {
     max-width: 100%;
   }
@@ -70,8 +74,24 @@
     margin: 0;
     gap: 0;
   }
+  .leftCon,
+  .rightCon {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    margin: 0.5rem 0;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .articleCon {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
   .title {
     max-width: 100%;
   }
@@ -83,8 +103,16 @@
     margin: 0;
     gap: 2;
   }
+  .leftCon,
+  .rightCon {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .articleCon {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
   .title {
     max-width: 100%;
   }
@@ -96,5 +124,9 @@
     justify-content: flex-start;
     margin: 0;
     gap: 2;
+  }
+  .leftCon,
+  .rightCon {
+    margin: 0;
   }
 }
