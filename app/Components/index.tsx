@@ -16,3 +16,4 @@ export { default as ServiceSlide } from './ServicesComponents/ServiceSlide/Servi
 export { default as CustomerReviews } from './ServicesComponents/ServiceSlide/CustomerReviews';
 export { default as AboutGrowth } from './AboutComponents/AboutGrowth/AboutGrowth';
 export { default as Developing } from './AboutComponents/Developing/Developing';
+export { default as Leader } from './AboutComponents/Leader/Leader';
