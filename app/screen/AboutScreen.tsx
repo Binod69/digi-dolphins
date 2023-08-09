@@ -3,6 +3,7 @@ import {
   Developing,
   PricingBanner,
   Leader,
+  FeaturesAbout,
 } from '../Components/index';
 import about from '../../public/img/about.webp';
 const AboutScreen = () => {
@@ -12,6 +13,7 @@ const AboutScreen = () => {
       <AboutGrowth />
       <Developing />
       <Leader />
+      <FeaturesAbout />
     </>
   );
 };
