@@ -25,7 +25,7 @@ const Leader = () => {
           <Row className={styles.imgCon}>
             {leaderData &&
               leaderData.map((item) => (
-                <Col key={item.id} lg={6}>
+                <Col className="my-2" key={item.id} lg={6}>
                   <figure>
                     <Image
                       src={item.image}
