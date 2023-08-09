@@ -4,6 +4,7 @@ import {
   PricingBanner,
   Leader,
   FeaturesAbout,
+  NewsLetter,
 } from '../Components/index';
 import about from '../../public/img/about.webp';
 const AboutScreen = () => {
@@ -14,6 +15,7 @@ const AboutScreen = () => {
       <Developing />
       <Leader />
       <FeaturesAbout />
+      <NewsLetter />
     </>
   );
 };
