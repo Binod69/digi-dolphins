@@ -1,0 +1,54 @@
+.con {
+  margin: 8rem 0;
+}
+.articleCon {
+  text-align: center;
+}
+.title {
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 3.125rem;
+  letter-spacing: -0.8px;
+  color: #2d3958;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.imgCon {
+  margin: 5rem 0;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.imgPara {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #2d3958;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .title {
+    font-size: 2.25rem;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .title {
+    font-size: 2.25rem;
+    max-width: 100%;
+  }
+}
