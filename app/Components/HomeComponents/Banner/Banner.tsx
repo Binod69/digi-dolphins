@@ -11,7 +11,7 @@ import Btn from '../../ui/Btn';
 import styles from './banner.module.css';
 
 const Banner = () => {
-  const { ref, inView } = useInView({ triggerOnce: false });
+  const { ref, inView } = useInView({ triggerOnce: true });
   const animation = useSpring({
     opacity: inView ? 1 : 0,
     transform: inView ? 'translateY(0)' : 'translateY(100px)',
