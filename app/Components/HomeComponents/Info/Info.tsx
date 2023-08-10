@@ -50,8 +50,8 @@ const Info: React.FC = () => {
                   <Image
                     src={item.icon}
                     alt={item.title}
-                    width={120}
-                    height={120}
+                    width={50}
+                    height={50}
                   />
                 </div>
                 <article>
