@@ -84,7 +84,7 @@ const Navbars = () => {
                   </NavDropdown> */}
                   <Link
                     className={`${styles.color} nav-link me-lg-4`}
-                    href="https://my-personal-blogs.vercel.app/"
+                    href="https://www.binodbudhathoki.com.np/"
                     target="_blank"
                   >
                     Blog
