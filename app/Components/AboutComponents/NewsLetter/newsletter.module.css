@@ -8,7 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem;
+  text-align: center;
+  margin-top: 4rem;
 }
 .title {
   color: #fff;
@@ -23,8 +24,9 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 2rem 0;
   max-width: 40%;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 .input {
   padding: 14px 22px;
@@ -44,4 +46,62 @@
 
 .btn:hover {
   background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .con {
+    width: 95%;
+    height: 100%;
+    margin: 4rem auto;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    max-width: 100%;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .btn {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .con {
+    width: 100%;
+    height: 100%;
+    margin: 4rem auto;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    max-width: 100%;
+  }
+  .form {
+    max-width: 60%;
+  }
+  .btn {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .con {
+    width: 100%;
+    height: 100%;
+    margin: 4rem auto;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    max-width: 100%;
+  }
+  .form {
+    max-width: 60%;
+  }
+  .btn {
+    max-width: 100%;
+  }
 }

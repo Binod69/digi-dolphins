@@ -30,10 +30,10 @@ const NewsLetter: React.FC = () => {
               type="text"
               placeholder="Your email address"
             />
-            <Form.Control type="button" />
-            {/* <button className={styles.btn} onClick={handleSubmit}>
+
+            <button className={styles.btn} onClick={handleSubmit}>
               Sign up
-            </button> */}
+            </button>
           </Form>
         </Col>
       </Row>
