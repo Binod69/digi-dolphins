@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Btn from '../../ui/Btn';
 import bgpattern from '../../../../public/img/bg-pattern0.webp';
 import styles from './plan.module.css';
+import Animation from '../../Animation/Animation';
 
 const Plan = () => {
   return (
@@ -13,27 +14,33 @@ const Plan = () => {
       <Container>
         <Row>
           <Col className={styles.con}>
-            <article className={styles.articleCon}>
-              <h2 className={styles.title}>
-                Plan for big expenses, manage profits, vendors, and much more
-              </h2>
-              <p className={styles.para}>
-                We work with organizations of all sizes, from early start-ups to
-                global brands, in the private, public, and social sector.
-              </p>
-            </article>
-            <div className={styles.fig}>
-              <Image
-                src={bgpattern}
-                alt="bg.webp"
-                quality={80}
-                placeholder="blur"
-              />
-            </div>
+            <Animation>
+              <article className={styles.articleCon}>
+                <h2 className={styles.title}>
+                  Plan for big expenses, manage profits, vendors, and much more
+                </h2>
+                <p className={styles.para}>
+                  We work with organizations of all sizes, from early start-ups
+                  to global brands, in the private, public, and social sector.
+                </p>
+              </article>
+            </Animation>
+            <Animation>
+              <div className={styles.fig}>
+                <Image
+                  src={bgpattern}
+                  alt="bg.webp"
+                  quality={80}
+                  placeholder="blur"
+                />
+              </div>
+            </Animation>
           </Col>
-          <div className="text-center my-3">
-            <Btn btnTitle={'Get started'} />
-          </div>
+          <Animation>
+            <div className="text-center my-3">
+              <Btn btnTitle={'Get started'} />
+            </div>
+          </Animation>
         </Row>
       </Container>
     </>
