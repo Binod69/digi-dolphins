@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import leaderData from './leaderData';
 import styles from './leader.module.css';
 import Link from 'next/link';
+import Animation from '../../Animation/Animation';
 
 const Leader = () => {
   return (
@@ -26,23 +27,25 @@ const Leader = () => {
             {leaderData &&
               leaderData.map((item) => (
                 <Col className="my-2" key={item.id} lg={6}>
-                  <figure>
-                    <Link href="/">
-                      <Image
-                        src={item.image}
-                        alt="ui.webp"
-                        quality={100}
-                        loading="lazy"
-                        width={500}
-                        height={500}
-                        style={{ objectFit: 'cover' }}
-                        className={styles.img}
-                      />
-                    </Link>
-                    <figcaption className={styles.imgPara}>
-                      {item.title}
-                    </figcaption>
-                  </figure>
+                  <Animation>
+                    <figure>
+                      <Link href="/">
+                        <Image
+                          src={item.image}
+                          alt="ui.webp"
+                          quality={100}
+                          loading="lazy"
+                          width={500}
+                          height={500}
+                          style={{ objectFit: 'cover' }}
+                          className={styles.img}
+                        />
+                      </Link>
+                      <figcaption className={styles.imgPara}>
+                        {item.title}
+                      </figcaption>
+                    </figure>
+                  </Animation>
                 </Col>
               ))}
           </Row>

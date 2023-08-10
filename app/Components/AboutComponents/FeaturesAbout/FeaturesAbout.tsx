@@ -10,6 +10,7 @@ import image2 from '../../../../public/img/exp-about-2.webp';
 import image3 from '../../../../public/img/exp-about-3.webp';
 import image4 from '../../../../public/img/exp-about-4.webp';
 import styles from './featuresabout.module.css';
+import Animation from '../../Animation/Animation';
 
 const FeaturesAbout = () => {
   return (
@@ -68,36 +69,44 @@ const FeaturesAbout = () => {
             <Col lg={6}>
               <Row>
                 <Col className={styles.leftCon}>
-                  <figure className="mb-lg-4">
-                    <Image
-                      className={styles.img}
-                      src={image1}
-                      alt="image.webp"
-                    />
-                  </figure>
-                  <figure>
-                    <Image
-                      className={styles.img}
-                      src={image2}
-                      alt="image2.webp"
-                    />
-                  </figure>
+                  <Animation>
+                    <figure className="mb-lg-4">
+                      <Image
+                        className={styles.img}
+                        src={image1}
+                        alt="image.webp"
+                      />
+                    </figure>
+                  </Animation>
+                  <Animation>
+                    <figure>
+                      <Image
+                        className={styles.img}
+                        src={image2}
+                        alt="image2.webp"
+                      />
+                    </figure>
+                  </Animation>
                 </Col>
                 <Col className={styles.rightCon}>
-                  <figure className="mb-lg-4">
-                    <Image
-                      className={styles.img}
-                      src={image3}
-                      alt="image.webp"
-                    />
-                  </figure>
-                  <figure>
-                    <Image
-                      className={styles.img}
-                      src={image4}
-                      alt="image2.webp"
-                    />
-                  </figure>
+                  <Animation>
+                    <figure className="mb-lg-4">
+                      <Image
+                        className={styles.img}
+                        src={image3}
+                        alt="image.webp"
+                      />
+                    </figure>
+                  </Animation>
+                  <Animation>
+                    <figure>
+                      <Image
+                        className={styles.img}
+                        src={image4}
+                        alt="image2.webp"
+                      />
+                    </figure>
+                  </Animation>
                 </Col>
               </Row>
             </Col>
