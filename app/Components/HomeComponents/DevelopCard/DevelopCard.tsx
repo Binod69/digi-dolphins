@@ -68,23 +68,23 @@ const DevelopCard: React.FC<DevelopCardProps> = ({ linkTitle }) => {
                           <path
                             d="M2 17L12 22L22 17"
                             stroke="#FFC0EC"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                           <path
                             d="M2 12L12 17L22 12"
                             stroke="#FFC0EC"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                           <path
                             d="M12 2L2 7L12 12L22 7L12 2Z"
                             stroke="#FFC0EC"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                         </svg>
                       </span>
