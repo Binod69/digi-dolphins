@@ -12,9 +12,9 @@ const DevelopCard: React.FC<DevelopCardProps> = ({ linkTitle }) => {
     <>
       <Row>
         <Col lg={6}>
-          <Animation>
-            <Row sm={12} md={2} lg={2}>
-              <Col>
+          <Row sm={12} md={2} lg={2}>
+            <Col>
+              <Animation>
                 <div className={styles.cardCon1}>
                   <div className="text-center">
                     <div className=" my-lg-5  my-4">
@@ -50,8 +50,10 @@ const DevelopCard: React.FC<DevelopCardProps> = ({ linkTitle }) => {
                     </article>
                   </div>
                 </div>
-              </Col>
-              <Col className="mt-lg-5 mt-md-0 my-5  my-lg-0">
+              </Animation>
+            </Col>
+            <Col className="mt-lg-5 mt-md-0 my-5  my-lg-0">
+              <Animation>
                 <div className={styles.cardCon1}>
                   <div className="text-center">
                     <div className="my-lg-5 my-4 ">
@@ -94,8 +96,10 @@ const DevelopCard: React.FC<DevelopCardProps> = ({ linkTitle }) => {
                     </article>
                   </div>
                 </div>
-              </Col>
-              <Col>
+              </Animation>
+            </Col>
+            <Col>
+              <Animation>
                 <div className={styles.cardCon1}>
                   <div className="text-center">
                     <div className="my-lg-5 my-4">
@@ -131,8 +135,10 @@ const DevelopCard: React.FC<DevelopCardProps> = ({ linkTitle }) => {
                     </article>
                   </div>
                 </div>
-              </Col>
-              <Col className="mt-lg-5 mt-md-0 my-5  my-lg-0">
+              </Animation>
+            </Col>
+            <Col className="mt-lg-5 mt-md-0 my-5  my-lg-0">
+              <Animation>
                 <div className={styles.cardCon1}>
                   <div className="text-center">
                     <div className="my-lg-5 my-4">
@@ -168,31 +174,35 @@ const DevelopCard: React.FC<DevelopCardProps> = ({ linkTitle }) => {
                     </article>
                   </div>
                 </div>
-              </Col>
-            </Row>
-          </Animation>
+              </Animation>
+            </Col>
+          </Row>
         </Col>
 
         <Col
           lg={6}
           className=" d-lg-flex justify-content-lg-center flex-lg-column align-items-lg-center"
         >
-          <Animation>
-            <article className="ms-lg-5">
+          <article className="ms-lg-5">
+            <Animation>
               <h2 className={styles.title}>
                 Strategies that get you on the path to success
               </h2>
+            </Animation>
+            <Animation>
               <p className={styles.para}>
                 Through an in-depth knowledge of all industrial sectors and the
                 application of approaches such as Lean Strategy, and Business
                 Design, we prepare organisations to welcome change, to be ready
                 to evolve rapidly while remaining competitive in the market.
               </p>
+            </Animation>
+            <Animation>
               <Link href="/" className={styles.link}>
                 {linkTitle} <AiOutlineArrowRight />
               </Link>
-            </article>
-          </Animation>
+            </Animation>
+          </article>
         </Col>
       </Row>
     </>
