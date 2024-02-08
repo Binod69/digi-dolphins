@@ -100,7 +100,7 @@ const Navbars = () => {
 
                 <Link
                   className={`${styles.color} nav-link me-lg-4`}
-                  href="https://www.binodbudhathoki.com.np/"
+                  href="https://my-personal-blog-binod.vercel.app/"
                   target="_blank"
                 >
                   Blog
